@@ -18,10 +18,12 @@ class Game {
 }
 
 class Bomb {
+    
     var bombImage: UIImage
     var bombTapped: Bool
     
     init(bombImage: UIImage, bombTapped: Bool) {
+        
         self.bombImage = bombImage
         self.bombTapped = bombTapped
     }

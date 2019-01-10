@@ -46,6 +46,9 @@
                                             <constraint firstAttribute="bottom" secondItem="Ec0-eB-NtP" secondAttribute="bottom" id="dtm-jY-b57"/>
                                             <constraint firstAttribute="trailing" secondItem="Ec0-eB-NtP" secondAttribute="trailing" id="sdc-fF-RhR"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="tileImage" destination="Ec0-eB-NtP" id="8Rw-eX-0RK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

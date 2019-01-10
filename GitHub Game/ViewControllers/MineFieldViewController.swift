@@ -47,6 +47,15 @@ class MineFieldViewController: UIViewController, UICollectionViewDelegate, UICol
         
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cellWrapped = collectionView.cellForItem(at: indexPath)
+        
+        guard let cell = cellWrapped else {return}
+        
+        cell.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        
+    }
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        <#code#>
 //    }

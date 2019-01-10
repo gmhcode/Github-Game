@@ -42,8 +42,6 @@
 		90F1BEDD21E7CAA400834C41 = {
 			isa = PBXGroup;
 			children = (
-				F70A0EB021E7E426003F73A6 /* GameController.swift */,
-				F70A0EAE21E7E378003F73A6 /* Game.swift */,
 				90F1BEE821E7CAA400834C41 /* GitHub Game */,
 				90F1BEE721E7CAA400834C41 /* Products */,
 			);
@@ -60,6 +58,8 @@
 		90F1BEE821E7CAA400834C41 /* GitHub Game */ = {
 			isa = PBXGroup;
 			children = (
+				F70A0EB021E7E426003F73A6 /* GameController.swift */,
+				F70A0EAE21E7E378003F73A6 /* Game.swift */,
 				90F1BEE921E7CAA400834C41 /* AppDelegate.swift */,
 				90F1BEEB21E7CAA400834C41 /* ViewController.swift */,
 				90F1BEED21E7CAA400834C41 /* Main.storyboard */,
@@ -291,7 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6XHS9MLH4Q;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "GitHub Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6XHS9MLH4Q;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "GitHub Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

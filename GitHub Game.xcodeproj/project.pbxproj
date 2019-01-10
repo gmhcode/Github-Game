@@ -16,6 +16,8 @@
 		90F1BF0621E7FC9D00834C41 /* extension Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1BF0521E7FC9D00834C41 /* extension Random.swift */; };
 		F70A0EB421E7F165003F73A6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A0EB321E7F165003F73A6 /* Game.swift */; };
 		F70A0EB621E7F184003F73A6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A0EB521E7F184003F73A6 /* GameController.swift */; };
+		F70A0EB821E7FC31003F73A6 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A0EB721E7FC31003F73A6 /* AlertController.swift */; };
+		F70A0EBA21E80184003F73A6 /* PutInViewControllerAndThenDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A0EB921E80184003F73A6 /* PutInViewControllerAndThenDelete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		90F1BF0521E7FC9D00834C41 /* extension Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension Random.swift"; sourceTree = "<group>"; };
 		F70A0EB321E7F165003F73A6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F70A0EB521E7F184003F73A6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		F70A0EB721E7FC31003F73A6 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		F70A0EB921E80184003F73A6 /* PutInViewControllerAndThenDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutInViewControllerAndThenDelete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		90F1BEDD21E7CAA400834C41 = {
 			isa = PBXGroup;
 			children = (
+				F70A0EB721E7FC31003F73A6 /* AlertController.swift */,
+				F70A0EB921E80184003F73A6 /* PutInViewControllerAndThenDelete.swift */,
 				90F1BEE821E7CAA400834C41 /* GitHub Game */,
 				90F1BEE721E7CAA400834C41 /* Products */,
 			);
@@ -180,9 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F1BEEA21E7CAA400834C41 /* AppDelegate.swift in Sources */,
+				F70A0EBA21E80184003F73A6 /* PutInViewControllerAndThenDelete.swift in Sources */,
 				F70A0EB621E7F184003F73A6 /* GameController.swift in Sources */,
 				90F1BF0121E7E65500834C41 /* MineFieldViewController.swift in Sources */,
 				90F1BF0421E7EB5200834C41 /* MineFieldCollectionViewCell.swift in Sources */,
+				F70A0EB821E7FC31003F73A6 /* AlertController.swift in Sources */,
 				F70A0EB421E7F165003F73A6 /* Game.swift in Sources */,
 				90F1BF0621E7FC9D00834C41 /* extension Random.swift in Sources */,
 			);

@@ -13,6 +13,7 @@
 		90F1BEF421E7CAA700834C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F1BEF221E7CAA700834C41 /* LaunchScreen.storyboard */; };
 		90F1BF0121E7E65500834C41 /* MineFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1BF0021E7E65500834C41 /* MineFieldViewController.swift */; };
 		90F1BF0421E7EB5200834C41 /* MineFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1BF0321E7EB5200834C41 /* MineFieldCollectionViewCell.swift */; };
+		90F1BF0621E7FC9D00834C41 /* extension Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1BF0521E7FC9D00834C41 /* extension Random.swift */; };
 		F70A0EB421E7F165003F73A6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A0EB321E7F165003F73A6 /* Game.swift */; };
 		F70A0EB621E7F184003F73A6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A0EB521E7F184003F73A6 /* GameController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		90F1BEF521E7CAA700834C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F1BF0021E7E65500834C41 /* MineFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineFieldViewController.swift; sourceTree = "<group>"; };
 		90F1BF0321E7EB5200834C41 /* MineFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineFieldCollectionViewCell.swift; sourceTree = "<group>"; };
+		90F1BF0521E7FC9D00834C41 /* extension Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension Random.swift"; sourceTree = "<group>"; };
 		F70A0EB321E7F165003F73A6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F70A0EB521E7F184003F73A6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 				90F1BF0221E7EB3200834C41 /* View */,
 				90F1BEFC21E7E14100834C41 /* ViewControllers */,
 				90F1BEFB21E7E0DA00834C41 /* Resources */,
+				90F1BF0521E7FC9D00834C41 /* extension Random.swift */,
 			);
 			path = "GitHub Game";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				90F1BF0121E7E65500834C41 /* MineFieldViewController.swift in Sources */,
 				90F1BF0421E7EB5200834C41 /* MineFieldCollectionViewCell.swift in Sources */,
 				F70A0EB421E7F165003F73A6 /* Game.swift in Sources */,
+				90F1BF0621E7FC9D00834C41 /* extension Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

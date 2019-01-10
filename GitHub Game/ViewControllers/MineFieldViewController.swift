@@ -38,9 +38,9 @@ class MineFieldViewController: UIViewController, UICollectionViewDelegate, UICol
     
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MineFieldCollectionViewCell
         
-        cell.backgroundColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        cell.tileImage.image = UIImage(named: "grassTile")
         
         
         // Configure the cell
@@ -48,11 +48,26 @@ class MineFieldViewController: UIViewController, UICollectionViewDelegate, UICol
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cellWrapped = collectionView.cellForItem(at: indexPath)
+        let cell = collectionView.cellForItem(at: indexPath) as! MineFieldCollectionViewCell
         
-        guard let cell = cellWrapped else {return}
         
-        cell.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        var range = (1...50).randomElement()
+        var bombRange = (40...50).randomElement()
+        
+        
+        
+        if range! >= bombRange! {
+            cell.tileImage.image = UIImage(named: "bomb")
+        }
+        else {
+            cell.tileImage.image = UIImage(named: "dirtTile")
+        }
+       
+        
+        
+        
+       
+       
         
         
     }

@@ -17,7 +17,7 @@ class MineFieldCollectionViewCell: UICollectionViewCell {
     
     
     func updateViews(){
-        
+        self.tileImage.image = UIImage(named: "grassTile")
     
     }
     

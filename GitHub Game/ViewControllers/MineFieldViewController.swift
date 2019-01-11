@@ -12,11 +12,22 @@ class MineFieldViewController: UIViewController, UICollectionViewDelegate, UICol
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var livesLeft: UILabel!
+    
+    var randomNumberDraw: Int {
+      return (1...50).randomElement()!
+    }
+    var higharray = [44,45,46,47,48,49]
+    
+    var lives = 3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.delegate = self
         collectionView.dataSource = self
+        livesLeft.text = "\(lives)"
+        
         // Do any additional setup after loading the view.
     }
     
@@ -41,23 +52,39 @@ class MineFieldViewController: UIViewController, UICollectionViewDelegate, UICol
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MineFieldCollectionViewCell
         
         cell.tileImage.image = UIImage(named: "grassTile")
-        
-        
-        // Configure the cell
-        
+        livesLeft.text = "\(lives)"
         return cell
     }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! MineFieldCollectionViewCell
         
         
-        var range = (1...50).randomElement()
-        var bombRange = (40...50).randomElement()
+        if cell.tileImage.image == UIImage(named: "dirtTile"){
+            return
+        }
+        if cell.tileImage.image == UIImage(named: "bomb"){
+            return
+        }
+
+        let bombRange = higharray.randomElement()
         
-        
-        
-        if range! >= bombRange! {
+    
+        if randomNumberDraw >= bombRange! {
             cell.tileImage.image = UIImage(named: "bomb")
+            
+            higharray.remove(at: higharray.count - 1)
+            print(higharray)
+            lives -= 1
+            livesLeft.text = "\(lives)"
+            
+                if lives == 0 {
+                    loseAlert(cell: cell, indexPath: indexPath)
+                    lives = 3
+                    higharray = [40,41,42,43,44,45,46,47,48,49,50]
+                
+                }
         }
         else {
             cell.tileImage.image = UIImage(named: "dirtTile")
@@ -65,14 +92,33 @@ class MineFieldViewController: UIViewController, UICollectionViewDelegate, UICol
        
         
         
-        
-       
-       
-        
-        
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        <#code#>
-//    }
-
+    func loseAlert(cell: MineFieldCollectionViewCell, indexPath: IndexPath){
+        
+    let alert = UIAlertController(title: "You lost!", message: "Do you want to retry?", preferredStyle: .alert)
+    
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) in
+           
+            self.resetCells(cell: cell, indexPath: indexPath)
+            self.collectionView.reloadData()
+        }))
+    alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+    
+    self.present(alert, animated: true)
+        
+    
+    }
+    
+    func resetCells(cell: MineFieldCollectionViewCell, indexPath: IndexPath){
+        
+        cell.updateViews()
+    }
 }
+
+extension MineFieldViewController{
+    
+    
+    
+    
+}
+

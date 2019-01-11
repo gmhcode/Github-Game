@@ -10,10 +10,15 @@ import UIKit
 class GameController {
     
     func bombIsTapped(bomb: Bomb) -> UIImage? {
+        
         let bombTapped = bomb.bombTapped
+        
         if bombTapped == true {
+            
             return UIImage(named: "bomb")
+            
         } else {
+            
             return nil
         }
     }

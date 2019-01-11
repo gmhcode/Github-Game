@@ -13,11 +13,14 @@ import UIKit
 
 class MineFieldCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var tileImage: UIImageView!
     
     
     func updateViews(){
+        self.tileImage.image = UIImage(named: "grassTile")
     
     }
+    
     
     
 }

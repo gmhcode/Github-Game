@@ -69,10 +69,17 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GT2-Aa-AUg">
+                                <rect key="frame" x="127" y="57" width="121" height="30"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22252693772315979" green="0.13738194108009338" blue="0.049861468374729156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fbA-Md-YoF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="28.5" id="19Q-2i-fkk"/>
+                            <constraint firstItem="GT2-Aa-AUg" firstAttribute="centerX" secondItem="fbA-Md-YoF" secondAttribute="centerX" id="5Cb-5Q-MPS"/>
+                            <constraint firstItem="GT2-Aa-AUg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="5KG-lz-SIU"/>
+                            <constraint firstItem="GT2-Aa-AUg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="75f-XU-063"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jlf-M5-t6t" secondAttribute="bottom" constant="29.5" id="Jr3-Pv-Ylv"/>
                             <constraint firstItem="fbA-Md-YoF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="c6P-bC-OX3"/>
                             <constraint firstItem="fbA-Md-YoF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="csX-nd-OO0"/>
